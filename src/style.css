@@ -1,0 +1,100 @@
+.background{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/sonic-fundo.png);
+  background-size: cover;
+  bottom: 0;
+  animation: slideleft 50s infinite linear;
+}
+
+.background header{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: fantasy;
+  color: #ffd900;
+  font-size: 25px;
+}
+
+.background .logo-title{
+  margin: 40px 20px 0;
+  font-size: 34px;
+}
+
+.background .text-score{
+  margin: 0 20px;
+  font-size: 22px;
+}
+
+header .btnStart{
+  cursor: pointer;
+  width: 180px;
+  height: 60px;
+  border: none;
+  border-radius: 20px;
+  background-color: #1304e2;
+  color: #fff;
+  font-family: fantasy;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.game-over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/sonic-fundo.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  font-family: fantasy;
+  color: #ffff;
+  font-size: 30px;
+}
+
+.game-over h1, p{
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.sonic{
+  width: 120px;
+  height: 120px;
+  background-image: url(../images/sonic.gif);
+  background-size: cover;
+  position: absolute;
+  bottom: 180px;
+}
+
+.eggman{
+  width: 120px;
+  height: 120px;
+  background-image: url(../images/eggman.gif);
+  background-size: cover;
+  position: absolute;
+  bottom: 180px;
+}
+
+.rings{
+  background-image: url(../images/rings.gif);
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 400px;
+}
+
+@keyframes slideleft{
+  from {
+    background-position: 0;
+  }
+  
+  to {
+    background-position: 7000%;
+  }
+};
